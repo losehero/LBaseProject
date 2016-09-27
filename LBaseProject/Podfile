@@ -1,0 +1,9 @@
+platform :ios, '7.0'
+
+ target 'LBaseProject' do
+        pod 'YTKNetwork', '~> 2.0.1’
+        pod 'SDWebImage', '~>3.8'
+        pod 'UMengAnalytics'
+ end
+
+
