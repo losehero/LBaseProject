@@ -1,9 +1,12 @@
 platform :ios, ‘8.0’
+source ‘https://github.com/CocoaPods/Specs.git’
+source ‘https://github.com/losehero/PSPecs.git'
 
  target 'LBaseProject' do
-        pod 'YTKNetwork', '~> 2.0.1’
-        pod 'SDWebImage', '~>3.8'
-        pod 'UMengAnalytics'
+	pod	'YTKNetwork', '~> 2.0.1’
+	pod	'SDWebImage', '~>3.8'
+	pod	'UMengAnalytics'
+	pod	‘HomeViewProject’
  end
 
 

@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>HomeViewProject.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-LBaseProject.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1BDFA9D02490CD3AAC92CEDCB0A43626</key>
+		<key>68A58DBDFED7B6420BF0B0ACC897C9E4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1D96E9BE347564595F51A55CE005725C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>44A1D1B6B43E9C05692376770D1C3E65</key>
+		<key>7B624EA2449ABAF930B1A8C07629C4BF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>928353533005A4198EBDA5B700D37B64</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A0424D534A154F1C34090A7E3A34CB0D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC2B980A1CE71B6097BF505051B49293</key>
 		<dict>
 			<key>primary</key>
 			<true/>
