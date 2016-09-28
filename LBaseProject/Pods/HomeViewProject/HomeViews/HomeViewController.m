@@ -31,6 +31,8 @@
     [super viewDidLoad];
     
     [self.view addSubview:self.contentLabel];
+    
+    self.view.backgroundColor = [UIColor yellowColor];
 }
 
 - (void)didReceiveMemoryWarning {
