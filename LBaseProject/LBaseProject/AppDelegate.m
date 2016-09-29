@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import <Objection.h>
+#import "LoginProtocols.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow  alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.hidden = NO;
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    UIViewController<LoginViewControllerProtocols> *viewController = [[JSObjection defaultInjector] getObject:@protocol(LoginViewControllerProtocols)];
+    viewController.loginTitle = @"登录";
+    UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:viewController];
+    self.window.rootViewController = na;
+    
     return YES;
 }
 
