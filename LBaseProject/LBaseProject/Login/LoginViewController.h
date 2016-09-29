@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "LoginProtocols.h"
-@interface LoginViewController : UIViewController<LoginViewControllerProtocols>
+@interface LoginViewController : UIViewController <LoginViewControllerProtocol>
 @property (nonatomic) NSString *loginTitle;
 @end

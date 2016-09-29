@@ -13,6 +13,8 @@
 		32502CFF1D9A4DF5004E18AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32502CFE1D9A4DF5004E18AA /* AppDelegate.m */; };
 		32502D021D9A4DF5004E18AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32502D011D9A4DF5004E18AA /* ViewController.m */; };
 		32502D071D9A4DF5004E18AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32502D061D9A4DF5004E18AA /* Assets.xcassets */; };
+		32518B7B1D9CE52800A8A94D /* LUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 32518B7A1D9CE52800A8A94D /* LUser.m */; };
+		32518B7F1D9CEB7800A8A94D /* LoginDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 32518B7E1D9CEB7800A8A94D /* LoginDataRequest.m */; };
 		CBABA0CF7CB9DAC80304D030 /* libPods-LBaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F34E6A6AF2950F9078FC6D /* libPods-LBaseProject.a */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,10 @@
 		32502D011D9A4DF5004E18AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		32502D061D9A4DF5004E18AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32502D0B1D9A4DF5004E18AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32518B791D9CE52800A8A94D /* LUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LUser.h; sourceTree = "<group>"; };
+		32518B7A1D9CE52800A8A94D /* LUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LUser.m; sourceTree = "<group>"; };
+		32518B7D1D9CEB7800A8A94D /* LoginDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginDataRequest.h; sourceTree = "<group>"; };
+		32518B7E1D9CEB7800A8A94D /* LoginDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginDataRequest.m; sourceTree = "<group>"; };
 		87717C0455B6A966630C5C9F /* Pods-LBaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-LBaseProject/Pods-LBaseProject.release.xcconfig"; sourceTree = "<group>"; };
 		B6D4CE493C427AC72B9EFF5E /* Pods-LBaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBaseProject/Pods-LBaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C4F34E6A6AF2950F9078FC6D /* libPods-LBaseProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LBaseProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				3213FF311D9CC15A0072705D /* LoginProtocols.h */,
+				32518B7C1D9CE8E100A8A94D /* LoginDataRequest */,
 				3213FF2C1D9BF7130072705D /* LoginModel */,
 				3213FF291D9BF7030072705D /* LoginViewController.h */,
 				3213FF2A1D9BF7030072705D /* LoginViewController.m */,
@@ -69,6 +76,8 @@
 		3213FF2C1D9BF7130072705D /* LoginModel */ = {
 			isa = PBXGroup;
 			children = (
+				32518B791D9CE52800A8A94D /* LUser.h */,
+				32518B7A1D9CE52800A8A94D /* LUser.m */,
 				3213FF2D1D9BF7360072705D /* LoginModel.h */,
 				3213FF2E1D9BF7360072705D /* LoginModel.m */,
 			);
@@ -114,6 +123,15 @@
 				32502CFB1D9A4DF5004E18AA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32518B7C1D9CE8E100A8A94D /* LoginDataRequest */ = {
+			isa = PBXGroup;
+			children = (
+				32518B7D1D9CEB7800A8A94D /* LoginDataRequest.h */,
+				32518B7E1D9CEB7800A8A94D /* LoginDataRequest.m */,
+			);
+			path = LoginDataRequest;
 			sourceTree = "<group>";
 		};
 		D880EB741DD28AA62EF61D79 /* Pods */ = {
@@ -263,8 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3213FF2B1D9BF7030072705D /* LoginViewController.m in Sources */,
+				32518B7F1D9CEB7800A8A94D /* LoginDataRequest.m in Sources */,
 				32502D021D9A4DF5004E18AA /* ViewController.m in Sources */,
 				32502CFF1D9A4DF5004E18AA /* AppDelegate.m in Sources */,
+				32518B7B1D9CE52800A8A94D /* LUser.m in Sources */,
 				32502CFC1D9A4DF5004E18AA /* main.m in Sources */,
 				3213FF2F1D9BF7360072705D /* LoginModel.m in Sources */,
 			);

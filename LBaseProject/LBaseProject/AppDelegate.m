@@ -6,9 +6,12 @@
 //  Copyright © 2016年 losehero. All rights reserved.
 //
 
+#import <YTKNetwork/YTKNetwork.h>
+#import "LoginProtocols.h"
 #import "AppDelegate.h"
 #import <Objection.h>
-#import "LoginProtocols.h"
+
+
 @interface AppDelegate ()
 
 @end
@@ -22,8 +25,12 @@
     self.window.hidden = NO;
     self.window.backgroundColor = [UIColor whiteColor];
     
-    UIViewController<LoginViewControllerProtocols> *viewController = [[JSObjection defaultInjector] getObject:@protocol(LoginViewControllerProtocols)];
-    viewController.loginTitle = @"登录";
+    
+    YTKNetworkConfig *config = [YTKNetworkConfig sharedConfig];
+    config.baseUrl = @"http://123.56.70.231";
+    
+    UIViewController<LoginViewControllerProtocol> *viewController = [[JSObjection defaultInjector] getObject:@protocol(LoginViewControllerProtocol)];
+    viewController.loginTitle = @"title";
     UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:viewController];
     self.window.rootViewController = na;
     

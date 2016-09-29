@@ -7,7 +7,7 @@
 //
 
 #import <Objection/Objection.h>
-
-@interface LoginModel : JSObjectionModule
-@property (nonatomic) NSString *loginTitle;
+#import "LoginProtocols.h"
+@interface LoginModel : JSObjectionModule<LoginViewModelProtocol>
+@property (nonatomic) LUser *user;
 @end

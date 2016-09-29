@@ -7,13 +7,23 @@
 //
 
 #import "LoginViewController.h"
-
+#import "LoginModel.h"
 @interface LoginViewController ()
 @property (nonatomic,strong) UILabel *contentLabel;
+@property (nonatomic,strong) LoginModel *loginModel;
 @end
 
 @implementation LoginViewController
 
+- (LoginModel *)loginModel
+{
+    if (!_loginModel)
+    {
+        _loginModel = [[LoginModel alloc] init];
+    }
+    
+    return _loginModel;
+}
 
 - (UILabel *)contentLabel
 {
@@ -23,18 +33,29 @@
         _contentLabel.backgroundColor = [UIColor redColor];
         _contentLabel.center = self.view.center;
         _contentLabel.text = self.loginTitle;
+        _contentLabel.textColor = [UIColor whiteColor];
         _contentLabel.textAlignment = NSTextAlignmentCenter;
     }
     
     return _contentLabel;
 }
 
+- (void)dataRequest
+{
+    [self.loginModel dataRequestWithUsername:@"111" password:@"222" LoginRequestResultBlock:^(NSDictionary *result, NSInteger requestStatus) {
+        NSLog(@"result  :%@",result);
+        NSLog(@"status : %td",requestStatus);
+    }];
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
+    
     [self.view addSubview:[self contentLabel]];
+    
+    [self dataRequest];
 }
 
 - (void)didReceiveMemoryWarning {

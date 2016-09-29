@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LUser.h"
 
-@protocol LoginViewControllerProtocols <NSObject>
+typedef void (^LoginDataResultBlock)(NSDictionary *result,NSInteger requestStatus);
+
+@protocol LoginViewControllerProtocol <NSObject>
 @property (nonatomic) NSString *loginTitle;
+@end
+
+
+@protocol LoginViewModelProtocol <NSObject>
+@property (nonatomic) LUser *user;
+- (id)dataRequestWithUsername:(NSString *)userName password:(NSString *)password LoginRequestResultBlock:(LoginDataResultBlock)block;
 @end
