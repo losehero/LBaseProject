@@ -6,7 +6,7 @@ source ‘https://github.com/losehero/PSPecs.git'
 	pod	'YTKNetwork', '~> 2.0.1’
 	pod	'SDWebImage', '~>3.8'
 	pod	'UMengAnalytics'
-	pod	‘HomeViewProject’
+	pod	'HomeViewProject', '0.0.3'
     pod 'Objection', '1.6.1'
  end
 
