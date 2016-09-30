@@ -36,6 +36,7 @@
 		32518B7A1D9CE52800A8A94D /* LUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LUser.m; sourceTree = "<group>"; };
 		32518B7D1D9CEB7800A8A94D /* LoginDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginDataRequest.h; sourceTree = "<group>"; };
 		32518B7E1D9CEB7800A8A94D /* LoginDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginDataRequest.m; sourceTree = "<group>"; };
+		32518B951D9E43A400A8A94D /* Protocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Protocols.h; sourceTree = "<group>"; };
 		87717C0455B6A966630C5C9F /* Pods-LBaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-LBaseProject/Pods-LBaseProject.release.xcconfig"; sourceTree = "<group>"; };
 		B6D4CE493C427AC72B9EFF5E /* Pods-LBaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBaseProject/Pods-LBaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C4F34E6A6AF2950F9078FC6D /* libPods-LBaseProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LBaseProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +106,7 @@
 		32502CF91D9A4DF5004E18AA /* LBaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				32518B951D9E43A400A8A94D /* Protocols.h */,
 				3213FF281D9BF6B20072705D /* Login */,
 				32502CFD1D9A4DF5004E18AA /* AppDelegate.h */,
 				32502CFE1D9A4DF5004E18AA /* AppDelegate.m */,

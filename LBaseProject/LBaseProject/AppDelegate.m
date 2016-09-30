@@ -10,7 +10,7 @@
 #import "LoginProtocols.h"
 #import "AppDelegate.h"
 #import <Objection.h>
-
+#import "Protocols.h"
 
 @interface AppDelegate ()
 
@@ -25,12 +25,10 @@
     self.window.hidden = NO;
     self.window.backgroundColor = [UIColor whiteColor];
     
-    
     YTKNetworkConfig *config = [YTKNetworkConfig sharedConfig];
-    config.baseUrl = @"http://123.56.70.231";
+    config.baseUrl = @"http://s.budejie.com";
     
-    UIViewController<LoginViewControllerProtocol> *viewController = [[JSObjection defaultInjector] getObject:@protocol(LoginViewControllerProtocol)];
-    viewController.loginTitle = @"title";
+    UIViewController<HomeViewControllerProtocol> *viewController = [[JSObjection defaultInjector] getObject:@protocol(HomeViewControllerProtocol)];
     UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:viewController];
     self.window.rootViewController = na;
     
