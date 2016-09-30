@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - HomeViewProject (0.0.3):
+  - HomeViewProject (0.0.4):
     - Masonry
     - Objection (= 1.6.1)
     - SDWebImage (~> 3.8)
@@ -29,7 +29,7 @@ PODS:
     - AFNetworking (~> 3.0)
 
 DEPENDENCIES:
-  - HomeViewProject (= 0.0.3)
+  - HomeViewProject (= 0.0.4)
   - Objection (= 1.6.1)
   - SDWebImage (~> 3.8)
   - UMengAnalytics
@@ -37,7 +37,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  HomeViewProject: 39a285e452faf46b99aa709208e98c4e34aa80c8
+  HomeViewProject: 09bc5df444f65f4c9a6c1a11fc23fa38c3f9cb4b
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   Objection: ed03f2219cb22d2b5b893114219fe6c7e3263bde
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c

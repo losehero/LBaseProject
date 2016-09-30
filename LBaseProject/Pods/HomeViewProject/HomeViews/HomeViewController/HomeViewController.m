@@ -33,7 +33,7 @@
     if (!_tableView)
     {
         _tableView = [[UITableView alloc] init];
-        _tableView.backgroundColor = [UIColor redColor];
+        _tableView.backgroundColor = [UIColor whiteColor];
         _tableView.delegate = self;
         _tableView.dataSource = self;
     }
